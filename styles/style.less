@@ -1,0 +1,710 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300&display=swap');
+/*menu sidebar*/
+body
+{
+    position: relative;
+    z-index: -2;
+    font-family: 'Poppins', sans-serif;
+}
+.sidebar
+{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background: #C89171;
+    width: 250px;
+    height: 100%;
+    transition: .3s;
+    z-index: 1;
+
+}
+
+.active
+{
+    left: 0;
+}
+
+
+ul
+{
+    font-size: 2rem;
+    margin: 0;
+    padding: 20px 0;
+    font-family: 'Bebas Neue';
+    li
+    {
+        padding: 10px 20px;
+        color: #fff;
+
+        a
+        {
+            padding: 10px 20px;
+            color: #fff;
+            display: block;
+            text-decoration: none;
+            font-family: 'Bebas Neue';
+           
+        }
+    }
+}
+
+
+
+
+
+.sidebarBtn
+{
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+   
+    
+    span
+    {
+        display: block;
+        width: 50px;
+        box-shadow: 0.5px 0.5px rgba(15, 15, 15, 0.5);
+        height: 5px;
+        background: #C89171;
+        position: absolute;
+        top: 30px;
+        left: 5px;
+        transition: .3s;
+        border-radius: 10px;
+    
+    
+    
+    }
+    span:before
+    {
+        content: '';
+        position: absolute;
+        top: -13px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: #C89171;
+        transition: .3s;
+        box-shadow: 0.5px 0.5px rgba(15, 15, 15, 0.5);
+        border-radius: 10px;
+    }
+    span:after
+    {
+        content: '';
+        position: absolute;
+        top: 13px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: #C89171;
+        transition: .3s;
+        box-shadow: 0.5px 0.5px rgba(15, 15, 15, 0.5);
+        border-radius: 10px;
+    }
+}
+
+button:focus
+{
+    outline: none;
+}
+
+
+.sidebarBtn.toggle{
+    span
+    {
+        background: transparent;
+        box-shadow: none;
+    }
+    span:before
+    {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    span:after
+    {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*header*/
+.header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+    
+  }
+  
+  .img-wrapper {
+    width: 100%;
+    height: 100%;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      
+        animation: scale 10s;
+        opacity: none;
+      }
+    
+  }
+
+
+  
+@keyframes scale {
+    0% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  .banner {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+  }
+  
+ .home
+ {
+    h1
+    {
+        color: white;
+        font-size: 5rem;
+        position: relative;
+        top: -80px;
+        right: 70px;
+        font-family: 'Bebas Neue';
+    }
+   
+   
+   
+    h2
+    {
+       color: white;
+       font-size: 8rem;
+       position: relative;
+       bottom: 50px;
+       
+       font-family: 'Bebas Neue';
+    }
+   
+    p{
+        color: white;
+        font-size: 5rem;
+        position: relative;
+        right: 80px;
+        font-family: 'Bebas Neue';
+    }
+ }
+ 
+/* responsive mobile */
+
+ @media (max-width:992px)
+ {
+     .voirplus{
+         margin-bottom: 70px;
+         margin-top: 50px;
+     }
+ }
+
+ @media (max-width:400px)
+ {
+    .home h1
+    {
+        color: white;
+        font-size: 3.5rem;
+        position: relative;
+        top: -80px;
+        right: 30px;
+        font-family: 'Bebas Neue';
+    }
+   
+   
+   
+    .home h2
+    {
+       color: white;
+       font-size: 3.5rem;
+       position: absolute;
+       top: 240px;
+       left: 200px;
+       
+       font-family: 'Bebas Neue';
+    }
+    .home h2+h2
+    {
+        top: 300px;
+
+    }
+   
+    .home p{
+        color: white;
+        font-size: 3.5rem;
+        position: relative;
+        right: 30px;
+        font-family: 'Bebas Neue';
+    }
+    .leMotDuChef
+    {
+        position: relative;
+        top: 100px;
+    }
+    .breizhy
+    {
+        padding: 30px;
+    }
+    .btnAvis
+    {
+       
+        margin-top: 0px;
+    }
+    .bzh
+    {
+        margin-top: 80px;
+    }
+    #map{
+        width: 400px;
+        height: 600px;
+        position: relative;
+       
+        
+    }
+    
+    
+ }
+/*carte */
+.carte
+{
+    text-align: center;
+    img
+    {
+        width: 200px;
+    }
+}
+
+/* triskel*/
+
+.triskel img
+{
+    
+    width: 60%;
+    height: 60%;
+    position: relative;
+    bottom: -400px;
+    
+    
+}
+
+.voirplus
+{
+    a
+    {
+        padding-bottom: 40px;
+    }
+    
+    h2
+    {
+        font-family: 'Bebas Neue';
+    }
+    
+    h3
+    {
+        font-family: 'Bebas Neue';
+    }   
+} 
+
+/*presentation */
+.crepe
+{
+    text-align: center;
+    
+    margin-bottom: 100px;
+    .voirplus
+    {
+        margin-top: 100px;
+        p
+        {
+            margin-top:50px;
+        }
+    }
+}
+
+.bzh
+{
+    margin-bottom: 50px;
+    img
+    {
+        margin-top: 50px;
+        width: 80%;
+        height: 100%;
+        position: relative;
+        top: -100px;   
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.leMotDuChef 
+{
+
+    
+    text-align: center;
+    margin: 0px auto;
+    color: black;
+    position: relative;
+    bottom: -300px;
+    font-family: 'Bebas Neue';
+
+
+    h2
+    {
+        font-size: 3rem;
+    }
+
+    span
+    {
+        color: #C89171;
+    }
+
+    p
+    {
+        font-family: 'Poppins';
+    }
+}
+
+
+.avis
+{
+    margin-bottom: 100px;
+   
+}
+
+.star
+{
+    display: flex;
+    font-family: 'Bebas Neue';
+}
+
+.btnAvis
+{
+    position: absolute;
+    right: 30px;
+    color: #C89171;
+}
+.btnAvis:hover
+{
+    
+    color: #E3C2B3;
+}
+
+
+
+.etoile img
+{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+.breizhy
+{
+    display: flex;
+    font-family: 'Bebas Neue';
+    
+    margin-bottom: 60px;
+    img
+    {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        top: 3px;
+        left: 5px;
+    }
+
+}
+
+
+
+/* footer*/
+
+footer{
+   
+    background-color: #C89171;
+    color: white;
+    h4
+    {
+        font-family: 'Bebas Neue';
+        margin-top: 30px;
+            font-size: 2rem;
+    }
+    h3
+    {
+        font-family: 'Bebas Neue';
+    }
+}
+
+
+
+.newsletters
+{
+    
+    margin: 30px;
+    display: flex;
+    input
+    {
+        margin-left: 15px;
+        position:relative;
+        top: -5px;
+    }
+}
+
+
+
+
+
+
+
+/*------------------page carte ------------------------*/
+
+
+
+#Back
+{
+    background-image: url("images/2.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    
+    h1
+    {    
+   
+        padding-top: 120px;
+        padding-left: 30px;
+        color: white;
+        font-size: 5rem;
+        font-family: 'Bebas Neue';
+    
+    }
+}
+
+
+.gal
+{
+    display: flex;
+    margin: 5px;
+    h3
+    {
+        width: 100%;
+    }
+
+    p
+    {
+        color: #C89171;
+        font-family: 'Bebas Neue';
+        margin-bottom: 5px;
+    }
+}
+
+
+
+.boisson
+{
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+#myTrisquel
+{
+    background-image: url("../styles/images/ÉLEMENTSGRAPHIQUES/TRISQUEL.png");
+    background-position: center 70%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    h2
+    {
+        font-family: 'Bebas Neue';
+        color: #C89171;
+    }
+
+    h3
+    {
+        font-family: 'Bebas Neue';
+    }
+}
+
+
+
+.nosBoisson
+{
+    margin-bottom: 100px;
+}
+
+.nosGalettes
+{
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+
+.sucrée
+{
+    display: flex;
+    align-items: center;
+    margin: 40px;
+}
+
+.divider
+{
+    position: relative;
+   margin: auto;
+    height: 3px;
+    width: 50%;
+    background: #C89171;
+
+}
+/* itineraire------------------------------------------------*/
+
+
+.voiture
+{
+    background-image: url("images/18.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    margin-bottom: 50px;
+    h1{
+        padding-top: 120px;
+        padding-left: 30px;
+        color: white;
+        font-size: 5rem;
+        font-family: 'Bebas Neue';
+    }
+}
+
+
+
+
+
+.accordion
+{
+    
+    
+    background-color: #C89171;
+   
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    font-size: 3rem;
+    font-family: 'Bebas Neue';
+    color: white;
+}
+.accordion-button
+{
+    font-size: 3rem;
+}
+
+.pair
+{
+    background-color: #C89171;
+    
+    text-align: center;
+    padding: 5px;
+   
+   
+    font-family: 'Bebas Neue';
+    color: white;
+}
+
+.impair
+{
+    background-color: #E3C2B3;
+    
+    text-align: center;
+    padding: 5px;
+   
+    font-family: 'Bebas Neue';
+    color: white;
+}
+.accordion-button:not(.collapsed)
+{
+    background-color: #E3C2B3;
+    color: white;
+}
+
+
+
+#map{
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 50px;
+    
+    
+}
+
+#beleck
+{
+    background-image: url("images/18.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    h1{
+        padding-top: 120px;
+        padding-left: 30px;
+        color: white;
+        font-size: 5rem;
+        font-family: 'Bebas Neue';
+    }
+}
+
+
+
+/*--------------------page galerie ------------------------*/*
+
+
+.galerie
+{
+    font-size: 3.75rem;
+    font-family: 'Bebas Neue';
+    margin-top: 40px;
+    color: #C89171;
+}
